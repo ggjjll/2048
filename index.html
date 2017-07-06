@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />    <title>2048</title>
+    <link href="css/init.css" rel="stylesheet" type="text/css" >
+</head>
+<body>
+    <header>
+        <h3 id="gameName">2048</h3>
+        <div class="userScoreBox">
+            <h4>得分</h4>
+            <h5 id="userNowScore"></h5>
+        </div>
+        <div class="userScoreBox">
+            <h4>最高得分</h4>
+            <h5 id="userMaxScore"></h5>
+        </div>
+    </header>
+    <article id="gameMain">
+        <div id="checkerboard">
+            <span class="checker"></span>
+            <span class="checker"></span>
+            <span class="checker"></span>
+            <span class="checker"></span>
+            <span class="checker"></span>
+            <span class="checker"></span>
+            <span class="checker"></span>
+            <span class="checker"></span>
+            <span class="checker"></span>
+            <span class="checker"></span>
+            <span class="checker"></span>
+            <span class="checker"></span>
+            <span class="checker"></span>
+            <span class="checker"></span>
+            <span class="checker"></span>
+            <span class="checker"></span>
+        </div>
+    </article>
+    <aside id="buttonBox">
+        <span class="button" id="reGameBtn">重新开始</span>
+        <span class="button" id="overGameBtn">再加一块</span>
+    </aside>
+    <aside id="dialogBox">
+        <div class="dialog" id="dialogOver">
+            <h3>游戏结束</h3>
+            <p>嗨伙计，不能再移动了！</p>
+            <div class="button" id="dialogNewGameBtn">再来一局</div>
+        </div>
+        <div class="dialog" id="dialogWin">
+            <h3>游戏成功</h3>
+            <p>太溜了，比我想象的要快哦！</p>
+            <div class="button" id="dialogWinGameBtn">再来一局</div>
+        </div>
+    </aside>
+</body>
+<script src="js/touchslide.js" type="text/javascript"></script>
+<script src="js/animation.js" type="text/javascript"></script>
+<script src="js/game.js" type="text/javascript"></script>
+</html>
